@@ -1,0 +1,436 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+    border-spacing: 0;
+}
+/*
+===================================================
+Camping & Hiking
+===================================================
+*/
+
+.camping-banner {
+    background-image: url("../assets/camping-banner.jpg");
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 60vw; 
+}
+#camppics img {
+    border-radius: 20%;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lead h1 {
+    padding-bottom: 50px;
+}
+
+.camping {
+    padding: 44px 0 44px 0;
+}
+
+/*
+=====================================
+cooking
+=====================================
+*/
+
+.cooking-banner{
+    background-image: url("../assets/cooking-banner.JPG");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60vw;
+}
+.cooking-info {
+    border: 2px solid #9ca0a3;
+    border-radius: 5px;
+    margin-top: 88px;
+    padding-bottom: 22px;
+    padding-left: 25%;
+}
+.cooking-info img {
+    border-radius: 50%;
+    height: 160px;
+    margin: -66px 0 22px 0;
+    vertical-align: top;
+}
+.cooking-content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/*
+==========================================
+Travel
+==========================================
+*/
+.travel-banner {
+    background-image: url("../assets/greece-banner1.JPG");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60vw;
+}
+
+.travelGallery {
+    margin: 10px 50px;
+}
+
+.travelGallery img{
+    width: 280px;
+    height: 100%;
+    padding: 5px;
+    filter: grayscale(100%);
+    transition: 1s;
+
+}
+.travelGallery img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+/*
+===========================================
+Pets
+===========================================
+*/
+
+.pet-banner {
+    background-image: url("../assets/banner-pet.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 30vw;
+}
+#pet-pictures {
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+.pet-info img {
+    width: 350px;
+    height: 400px;
+    margin-top: 10%;
+    margin-left: 75%;
+}
+.pet-info {
+    display: inline-block;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.pet-info::before {
+    position: absolute;
+    top: -.5%;
+    left: -.5%;
+    width: 100%;
+    height: 100%;
+    border: 6px solid #4b036d;
+    content: '';
+  }
+
+  .btn-learn {
+      background: #cbe2c1;
+      border: 1px solid black;
+      border-radius: 20px;
+      color: rgb(61, 61, 61);
+      padding: 10px 20px;
+
+  }
+
+/*
+============================================
+Footer
+============================================
+*/
+.primary-footer {
+    min-width: 100%;
+	background: #cbe2c1;
+	background: -webkit-linear-gradient(to right, #4f024b, #ad2ebb);
+	background: -moz-linear-gradient(to right, #4f024b, #ad2ebb);
+	background: linear-gradient(to right, #4f024b, #ad2ebb );
+    padding: 70px 0 50px 0;
+    color: #ffffff;
+}
+.primary-secondary {
+    min-width: 100%;
+	background: #cbe2c1;
+	background: -webkit-linear-gradient(to right, #ff8c00 , #ffa900);
+	background: -moz-linear-gradient(to right, #ff8c00 , #ffa900);
+	background: linear-gradient(to right, #ff8c00 , #ffa900 );
+    padding: 44px 0 22px 0;
+    color: #ffffff;
+}
+.primary-footer i {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 45px;
+    color: #ffffff
+}
+.primary-secondary i {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 45px;
+    color: #ffffff
+}
+#bordered {
+    border: 2px solid red;
+    border-radius: 20px;    
+
+}
+
+.btn-contact {
+    background: #dda408;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: rgb(62, 23, 124);
+    padding: 10px 20px;
+}
+
+#copyright {
+    padding-top: 40px;
+}
+
+
+/*
+==============================================
+Center text
+==============================================
+*/
+
+#about-me,
+.lead h1,
+.lead p,
+.camping p,
+.camping h3,
+.camping h4,  
+.cooking h3,
+.cooking p,
+.pets h3,
+.pets p,
+.primary-footer,
+.primary-secondary,
+#portfolio h4,
+#portfolio p {
+     text-align: center;
+     font-family: 'IBM Plex Sans', sans-serif;
+}
+
+
+.row-purple {
+    min-width: 100%;
+	background: #cbe2c1;
+	background: -webkit-linear-gradient(to right, #ad2ebb, #4f024b);
+	background: -moz-linear-gradient(to right, #ad2ebb, #4f024b);
+	background: linear-gradient(to right, #ad2ebb, #4f024b );
+    padding: 44px 0 44px 0;
+    color: #ffffff;
+}  
+
+.row-orange {
+    min-width: 100%;
+	background: #cbe2c1;
+	background: -webkit-linear-gradient(to right, #ff8c00 , #ffa900);
+	background: -moz-linear-gradient(to right, #ff8c00 , #ffa900);
+	background: linear-gradient(to right, #ff8c00 , #ffa900 );
+    padding: 44px 0 44px 0;
+    color: #ffffff;
+}
+
+#about-me,
+.picture-banner,
+#portfolio {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+/*
+============================================
+Top
+============================================
+*/
+
+.top-banner {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../assets/japan-banner1.JPG');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-weight: bold;
+    color: aliceblue;
+    text-align: center; 
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'IBM Plex Sans', sans-serif;
+
+
+}
+
+h2 {
+    font-size: 35px;
+    color: darkgrey;
+    font-family: 'IBM Plex Sans', sans-serif;
+    
+}
+
+h3 {
+    font-size: 35px;
+    padding-bottom: 40px;
+    font-family: 'IBM Plex Sans', sans-serif;
+
+}
+h4 {
+   text-decoration: none;
+   font-size: 30px;
+   padding-top: 20px;
+   padding-bottom: 25px;
+   color: #ffffff;
+   font-family: 'IBM Plex Sans', sans-serif;
+
+}
+
+p,
+a {
+    padding-top: 25 px;     
+    padding-bottom: 25px;   
+    font-size: 20;
+    font-family: 'IBM Plex Sans', sans-serif;
+
+}   
+
+
+#about-me i{
+    font-size: 45px;
+    color: #260038;
+}
+
+#about-me img{
+    max-width: 100%;
+    height: 15vw;
+    border-radius: 20%; 
+}
+
+#portfolio i{
+    font-size: 50px;
+    color: #260038;
+    display: flex;
+    justify-content: center;
+}
+
+i {
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -ms-transition-animation-duration: 5s;
+}
+
+/*
+==============================================================
+nav bar
+==============================================================
+*/
+.navbar {
+    transition: all 0.5s;
+}
+
+.navbar-tag-line {
+    text-decoration: none;
+}
+ .nav-link {
+     font-size: 15px;
+     font-weight: bold;
+     color: #a5a5a5;
+ }
+
+
+
+/*
+==========================================================
+Banner of pictures
+===========================================================
+*/
+
+.picture-banner .container-fluid{
+    padding: 0;
+}
+.picture-banner .Pics {
+    position: relative;
+}
+.picture-banner .Pics > img {
+    width: 100%;
+    height: 100%;
+}
+.picture-banner .Pics > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    opacity: 0;
+    background-color: rgba(163, 22, 140, 0.5);
+    transition: opacity 0.5s;
+    font-weight: bold;
+    color: #ffffff;
+}
+.picture-banner .Pics:hover > div {
+    opacity: 1;
+}
